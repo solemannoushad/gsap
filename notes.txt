@@ -4,3 +4,9 @@ gsap.from - Final to Initial Animation
 stagger property - to animate multiple elements with a delay between each
 
 gsap.timeline() - to animate elements in queue - one after other
+scrollTrigger: {
+        trigger: "#page2 .box", - trigger element
+        scroller: "body",
+        markers: true, - just for development
+        scrub: boolean | 0-5 - for smooth animation tatally dependant of scrolling
+    }
