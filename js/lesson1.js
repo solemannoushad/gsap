@@ -1,9 +1,3 @@
-
-// gsap.to - Initial to Final Animation
-// gsap.from - Final to Initial Animation
-
-// stagger property - to animate multiple elements with a delay between each
-
 gsap.to(".box" , {
     x:1000,
     duration: 2,
