@@ -1,14 +1,4 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    color: white;
-}
 
-body {
-    background-color: #111;
-    font-family: 'Poppins', sans-serif;
-}
 
 .box {
     width: 200px;
