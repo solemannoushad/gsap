@@ -18,6 +18,19 @@
 
 #page3 {
     background-color: rgb(41, 182, 230);
+    justify-content: start;
+}
+
+#page4 {
+    background-color: rgb(8, 183, 241);
+}
+
+#page3 h1 {
+    font-size: 30vw;
+    font-weight: 600;
+    text-transform: uppercase;
+    transform: translateX(20%);
+    will-change: transform;
 }
 
 .box{

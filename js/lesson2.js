@@ -24,3 +24,19 @@ gsap.from("#page2 .box" , {
         scrub: 3,
     }
 })
+
+gsap.to("#page3 h1" , {
+    // transform: "translateX(-70%)",
+    xPercent: -70,
+    scrollTrigger: {
+        trigger: "#page3",
+        scroller: "body",
+        markers: true,
+        scrub: 5,
+        pin: true,
+        // start: "top 0%",
+        // end: "top -100%"
+        start: "top top",
+    end: "bottom+=800 top" // increase scroll distance
+    }
+})
