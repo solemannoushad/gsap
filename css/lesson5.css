@@ -1,0 +1,58 @@
+#hero {
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://images.unsplash.com/photo-1495756111155-45cb19b8aeee?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-position: center center;
+    background-size: cover;
+}
+
+nav {
+    padding : 30px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+nav i{
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+#nav-menu {
+    position: absolute;
+    top: 0;
+    right: -30%;
+    width: 30%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 150px 0 0 40px;
+    background-color: rgba(255, 255, 255, 0.37);
+    color: black;
+    gap: 40px;
+    backdrop-filter: blur(10px);
+    list-style: none;
+    opacity: 0;
+}
+
+#nav-menu li a {
+    font-size: 3rem;
+    font-weight: 400;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#nav-menu i {
+    color: black;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 2rem;
+    cursor: pointer;
+}
