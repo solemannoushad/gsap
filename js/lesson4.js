@@ -1,3 +1,6 @@
+
+let cursor = document.querySelector(".cursor");
+
 window.addEventListener("mousemove", (e) => {
   gsap.to(".cursor", {
     x: e.clientX,
@@ -8,6 +11,7 @@ window.addEventListener("mousemove", (e) => {
 
 let image = document.querySelector("#image");
 image.addEventListener("mouseenter", () => {
+    cursor.innerHTML = "Click Me!";
     gsap.to(".cursor", {
     scale: 2,
     duration: 0.5,
@@ -15,6 +19,7 @@ image.addEventListener("mouseenter", () => {
 })
 
 image.addEventListener("mouseleave", () => {
+    cursor.innerHTML = "";
     gsap.to(".cursor", {
     scale: 1,
     duration: 0.5,

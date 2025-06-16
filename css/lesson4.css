@@ -4,6 +4,7 @@
     background-color: red;
     position: absolute;
     border-radius: 100%;
+    z-index: 9;
 }
 
 #main {
@@ -17,7 +18,20 @@
 #image {
     width: 40%;
     height: 40%;
-    background-image: url(https://images.unsplash.com/photo-1745282322383-8ec67cc895b6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-    background-position: center center;
-    background-size: cover;
+    position: relative;
+}
+
+#image img{
+    width: 100%;
+    height: 100%;
+}
+
+#overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(255, 0, 0, 0.274);
+    top: 0;
+    left: 0;
+    z-index: 10;
 }
