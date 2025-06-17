@@ -39,17 +39,25 @@ splitTextFromBetween();
 
 gsap.from('#main h1 span.left', {
     duration: 0.6,
+    rotate: 180,
     opacity: 0,
     y: 80,
     stagger: 0.15,
     delay: 0.5,
+    // repeat: -1,
+    // repeatDelay: 1,
+    // yoyo: true,
 
 })
 gsap.from('#main h1 span.right', {
     duration: 0.6,
+    rotate: -180,
     opacity: 0,
     y: 80,
     stagger: -0.15,
     delay: 0.5,
+    // repeat: -1,
+    // repeatDelay: 1,
+    // yoyo: true,
 
 })
