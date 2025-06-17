@@ -13,13 +13,43 @@ let splitText = () => {
 
     heading.innerHTML = separatedSpans;
 }
+let splitTextFromBetween = () => {
+    let heading = document.querySelector('#main h1');
+    let headingText = document.querySelector('#main h1').textContent;
 
-splitText();
+    let splittedText = headingText.split('');
 
-gsap.from('#main h1 span', {
-    duration: 0.5,
+    let length = splittedText.length;
+    let middleIndex = Math.floor(length / 2);
+
+    let separatedSpans = ``
+
+    splittedText.forEach((element , index) => {
+        if(index <= middleIndex) {
+            separatedSpans += `<span class="left">${element}</span>`;
+        } else {
+            separatedSpans += `<span class="right">${element}</span>`;
+        }
+    });
+
+    heading.innerHTML = separatedSpans;
+}
+
+splitTextFromBetween();
+
+gsap.from('#main h1 span.left', {
+    duration: 0.6,
     opacity: 0,
-    y: 50,
-    stagger: 0.1,
-    delay: 0.5
+    y: 80,
+    stagger: 0.15,
+    delay: 0.5,
+
+})
+gsap.from('#main h1 span.right', {
+    duration: 0.6,
+    opacity: 0,
+    y: 80,
+    stagger: -0.15,
+    delay: 0.5,
+
 })
