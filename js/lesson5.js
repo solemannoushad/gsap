@@ -15,7 +15,7 @@ tl.from(navLinks, {
     x: 150,
     opacity: 0,
     stagger: 0.1,
-    duration: 0.7
+    duration: 0.5
 });
 
 tl.from(close , {
